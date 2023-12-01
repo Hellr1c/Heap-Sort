@@ -9,7 +9,7 @@ public class MsortnHsort
 
         while (loop) {
 
-            Console.WriteLine("Choose What Sortiing Method");
+            Console.WriteLine("Choose What Sorting Method");
             Console.WriteLine("1. Heap Sort");
             Console.WriteLine("2. Merge Sort");
             Console.Write("Enter your Choice: ");
