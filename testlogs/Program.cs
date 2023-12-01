@@ -1,26 +1,37 @@
 ﻿using System;
 
-public class HelloWorld
+public class MsortnHsort
 {
     static int lastindex;
     public static void Main(string[] args) {
 
-        Console.WriteLine("Choose What Sortiing Method");
-        Console.WriteLine("1. Heap Sort");
-        Console.WriteLine("2. Merge Sort");
-        Console.Write("Enter your Choice: ");
-        int choice = Convert.ToInt32(Console.ReadLine());
-        switch (choice)
-        {
-            case 1:
-                heapsort();
-                break;
-            case 2:
-                mergesort();
-                break;
+        bool loop = true;
+
+        while (loop) {
+
+            Console.WriteLine("Choose What Sortiing Method");
+            Console.WriteLine("1. Heap Sort");
+            Console.WriteLine("2. Merge Sort");
+            Console.Write("Enter your Choice: ");
+            int choice = Convert.ToInt32(Console.ReadLine());
+            switch (choice)
+            {
+                case 1:
+                    heapsort();
+                    break;
+                case 2:
+                    mergesort();
+                    break;
+            }
+            Console.WriteLine("");
+            Console.Write("Sort Again? (Y/N): ");
+            String choice1 = Console.ReadLine();
+            if (choice1.ToUpper() != "Y") {
+                loop = false;
+            }
+
         }
 
-        Console.Read();
     }
 
 
